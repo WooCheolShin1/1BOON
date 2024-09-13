@@ -575,7 +575,8 @@ ul.sub > li:hover a{
 
 .content{
   background-color: #fff;
-  height: 400px;
+  margin: 0 auto;
+  width: 1300px;
 }
 
 .loginsub{
@@ -599,6 +600,10 @@ ul.sub > li:hover a{
   background-image: none;
 }
 
+.content{
+  padding: 100px 0;
+}
+
 .content .loginbox form #login_idpw{
   height: 50px;
   margin: 0 0 10px;
@@ -616,11 +621,13 @@ ul.sub > li:hover a{
 
 .loginfieldset{
   padding: 20px;
+  border: 1px solid #ddd;
 }
 
 .loginfieldset input{
   font-size: 15px;
   padding: 0 0 0 10px;
+  margin: 0 0 20px auto;
 }
 
 .loginfieldset input::placeholder{
@@ -639,7 +646,7 @@ ul.sub > li:hover a{
   width: 480px;
   height: 320px;
   justify-content: space-between;
-  margin: 150px auto;
+  margin: 0 auto;
 }
 
 .required{
@@ -648,3 +655,125 @@ ul.sub > li:hover a{
   background-position: right top !important;
   border: 1px solid #ccc;
 }
+
+.loginfieldset div{
+  background-color: #f7f7f7;
+  color: #666666;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.loginfieldset div a{
+  padding: 15px 0 15px 0;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.loginfieldset div a:first-child p{
+  border-right: 1px solid #ddd;
+}
+
+.loginfieldset div a p:hover{
+  text-decoration: underline;
+}
+
+/*회원가입 부분*/
+.content .newCreate {
+
+}
+
+.newCreate p{
+  text-align: center;
+  color: #333;
+  border: 1px solid #333;
+  background: #fff;
+  padding: 15px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+#newcondition, #newcondition2{
+  margin: 10px auto 30px;
+  border: 1px solid #dbdbdb;
+}
+
+#newcondition .boxcheck, #newcondition2 .boxcheck{
+  padding: 15px 20px;
+  border-bottom: 1px solid #dbdbdb;
+  background: #f8f8f8;
+  font-size: 14px;
+  display: flex;
+}
+
+#newcondition .boxcheck h2, #newcondition2 .boxcheck h2{
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+  width: 99%;
+}
+
+#newcondition textarea{
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  border: 0;
+  line-height: 1.6em;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#newcondition2 div{
+  padding: 20px;
+  background-color: #fff;
+}
+
+#newcondition2 div table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+#newcondition2 div table thead tr th{
+  background: #646982;
+  width: calc(100% / 3);
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  font-weight: normal;
+  letter-spacing: -1px;
+  font-size: 12px;
+}
+
+#newcondition2 div table tbody tr td{
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+.content form .agreement{
+  text-align: right;
+  letter-spacing: -1px;
+  font-size: 16px;
+}
+
+.content form .buttonconfirm{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content form .buttonconfirm button{
+  height: 50px;
+  padding: 0 40px;
+  background: #333;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+

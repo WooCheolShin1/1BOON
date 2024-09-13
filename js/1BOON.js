@@ -25,6 +25,34 @@
     })
     //========================================================================//
 
+    //===============================회원가입 동의================================//
+    $('#allcheck').click(function(){
+    let checked = $('#allcheck').is(':checked');
+    if(checked){
+      $('#check1').prop('checked', true);
+      $('#check2').prop('checked', true);
+    }else{
+      $('#check1').prop('checked', false);
+      $('#check2').prop('checked', false);
+    }
+  });
+
+  $('#newpeople').click(function(){
+    var check1 = $('#check1').is(':checked');
+    var check2 = $('#check2').is(':checked');
+    if(check1 && check2){
+      $('#check1').prop('checked', true);
+      $('#check2').prop('checked', true);
+      //모든 체크박스에 적용할 시 푸터쪽의 체크박스까지 찍히는 현상이 발생한다.
+    }
+    else{
+      alert("회원가입약관의 내용에 동의하셔야 회원가입 하실 수 있습니다.");
+      return false;
+    }
+  });
+
+   //==========================================================================//
+
     let btn = document.querySelectorAll(".wrap .button li");
     let ilboonmenu = document.querySelectorAll(".wrap .wrapimage .swiper .swiper-wrapper");
     let sil = document.querySelector(".wrap .wrapimage");
