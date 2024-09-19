@@ -3,7 +3,6 @@
 
     $(window).scroll(function() {
       let wheelscroll = $(document).scrollTop();
-      console.log(wheelscroll);
       if(wheelscroll == 0){
         wheellist.style.backgroundColor = "transparent";
       }
@@ -11,6 +10,12 @@
         wheellist.style.backgroundColor = "#fff";
       }
     });
+
+    $('.btn_close').click(function(){
+      $('.top_area').css('display', 'none');
+      $('ul.sub').css('height', '190px');
+      $('.login').css('top', '50%');
+     });
     //=========================================================================//
 
     //===============================로그인 부분================================//
@@ -110,6 +115,26 @@
         disableOnInteraction : false,
       },
     });
+
+    var swiper = new Swiper(".mySwiper2", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      navigation: {
+        nextEl: ".arrowleft2",
+        prevEl: ".arrowright2",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction : false,
+      }
+    });
+    
+    window.onload = function(){
+      setTimeout(function() {
+        scrollTo(0,0);
+      }, 100);
+    }
 
   //  let options = 'width=400, height=400'
   //  window.open('popup.html', '_blank', options)

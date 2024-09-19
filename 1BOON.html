@@ -13,6 +13,16 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <body>
     <header>
+      <div class="top_area">
+        <div class="top_banner">
+          <div class="top_sale">
+            <a href="Newcreate.html">신규 회원 가입하고, 첫 구매 20% 쿠폰 받으세요.</a>
+          </div>
+        </div>
+        <a href="" class="btn_close" onclick="return false">
+          <img src="images/main/close.svg" alt="">
+        </a>
+      </div>
       <div class="list" id="scrollList">
         <div class="head">
           <a href="#">
@@ -427,7 +437,72 @@
   <div class="wrap2">
     <div class="inner">
       <h1>CAFEILBOON MENU</h1>
-      <p>무인 시장의 인기 상승, 블루오션 무인카페! CAFEILBOON</p>
+      <p>무인 시장의 인기 상승, 블루오션 무인카페! CAFEILBOON</p><br><br>
+      <button class="arrowleft2">
+      </button>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/frenchize/daeduk.jfif" />
+            <p>대덕점</p>
+            <p>2022년 02월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/suwon.jfif" />
+            <p>수원망포점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/daesung.jfif" />
+            <p>대성점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/hwasung.jfif" />
+            <p>화성시청점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/haengsin.jfif" />
+            <p>행신샘터점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/joongrang.jfif" />
+            <p>중랑신내점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/incheon.jfif" />
+            <p>인천계양점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/gwangju.jfif" />
+            <p>광주금호점</p>
+            <p>2022년 07월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/gwanak.jfif" />
+            <p>관악부영점</p>
+            <p>2022년 09월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/jeonju.jfif" />
+            <p>전주효자점</p>
+            <p>2022년 09월 오픈</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/frenchize/ulsan.jfif" />
+            <p>울산전하2호점</p>
+            <p>2022년 09월 오픈</p>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+      </div>
+      <button class="arrowright2">
+      </button>
     </div>
   </div>
   <div class="wrap3">
@@ -435,6 +510,15 @@
       <h1>CAFEILBOON MENU</h1>
       <p>무인 시장의 인기 상승, 블루오션 무인카페! CAFEILBOON</p>
       <img src="https://cafeilboon.com/theme/default/images/main/main_sec03_img.png" alt="">
+    </div>
+  </div>
+  <div class="wrap4">
+    <div class="inner">
+      <div class="inner_text">
+        <p>이 날씨와 계절에 가장 잘 어울리는</p>
+        <p>이 달의 커피추천</p>
+        <a href="" target class="viewbtn">VIEW ></a>
+      </div>
     </div>
   </div>
   <footer id="footer">
@@ -485,5 +569,20 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/1BOON.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      navigation: {
+        nextEl: ".arrowleft2",
+        prevEl: ".arrowright2",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction : false,
+      }
+    });
+  </script>
 </body>
 </html>
