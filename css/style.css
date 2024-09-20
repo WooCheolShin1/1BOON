@@ -334,7 +334,7 @@ ul.sub > li:hover a{
   width: 70px;
   height: 70px;
   transform: translateY(140px);
-  left: 100px;
+  left: 10%;
   position: absolute;
   border: 0;
   cursor: pointer;
@@ -345,7 +345,7 @@ ul.sub > li:hover a{
   width: 70px;
   height: 70px;
   transform: translateY(-360px);
-  right: 100px;
+  right: 10%;
   position: absolute;
   border: 0;
   cursor: pointer;
@@ -396,8 +396,8 @@ ul.sub > li:hover a{
 
 .wrap2 .inner .swiper-slide p{
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 5%;
+  left: 5%;
   padding: 20px;
   font-size: 25px;
   line-height: 32px;
@@ -408,8 +408,8 @@ ul.sub > li:hover a{
 
 .wrap2 .inner .swiper-slide p:nth-of-type(2){
   position: absolute;
-  top: 420px;
-  left: 660px;
+  top: 80%;
+  left: 70%;
 }
 
 .wrap2 .inner .swiper-slide img {
@@ -423,7 +423,7 @@ ul.sub > li:hover a{
   width: 70px;
   height: 70px;
   transform: translateY(215px);
-  left: 500px;
+  left: 30%;
   position: absolute;
   border: 0;
   cursor: pointer;
@@ -435,7 +435,7 @@ ul.sub > li:hover a{
   width: 70px;
   height: 70px;
   transform: translateY(-285px);
-  right: 500px;
+  right: 30%;
   position: absolute;
   border: 0;
   cursor: pointer;
@@ -921,4 +921,24 @@ ul.sub > li:hover a{
   cursor: pointer;
 }
 
+/*=================================반응형 구간================================*/
 
+@media screen and (max-width:1720px) {
+  .login{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1550px) {
+  .list > ul,
+  .arrowleft,
+  .arrowright{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1320px) { 
+  .wrap2 .inner .swiper-slide p:nth-of-type(2){
+    left: 35%;
+  }
+}
