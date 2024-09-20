@@ -114,8 +114,14 @@
         delay: 3000,
         disableOnInteraction : false,
       },
-    });
 
+      breakpoints: {
+        1320: {
+          slidesPerView : 3,
+        }
+      }
+    });
+    
     var swiper = new Swiper(".mySwiper2", {
       spaceBetween: 30,
       effect: "fade",
