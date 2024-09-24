@@ -43,7 +43,8 @@
     }
   });
 
-  $('#newpeople').click(function(){
+  $('#newpeople').click(function(e){
+    e.preventDefault();
     var check1 = $('#check1').is(':checked');
     var check2 = $('#check2').is(':checked');
     if(check1 && check2){

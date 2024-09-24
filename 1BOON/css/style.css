@@ -157,7 +157,7 @@ ul.sub{
   background-color: #fba51c;
 }
 
-.list ul:hover ul.sub{
+.list ul li:hover ul.sub{
   display: block;
 }
 

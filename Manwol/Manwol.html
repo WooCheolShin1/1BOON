@@ -4,63 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-
-    ul{
-      list-style: none;
-    }
-
-    a{
-      text-decoration: none;
-      color: white;
-    }
-
-    header{
-      height: 10%;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      position: sticky;
-      z-index: 999;
-      top: 0;
-    }
-
-    .list{
-      margin: 0 auto;
-      width: 100%;
-      background-color: darkblue;
-    }
-
-    .list ul{
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      padding: 0px 50px;
-    }
-
-    .list ul li{
-      font-weight: 700;
-      line-height: 70px;
-    }
-
-    .head{
-      padding: 0 20px;
-    }
-
-    .list ul li a:hover{
-      color: #116dff;
-    }
-  </style>
+  <title>24시 무인카페 만월경()</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="shortcut icon" href="images/manwolmain.webp" type="image/x-icon" />
 </head>
 <body>
   <header>
-    <div class="list">
+    <div class="list" id="scrollList">
       <ul>
         <li>
           <div class="head">
@@ -72,24 +24,116 @@
         </li>
         <li>
           <a href="">만월경입니다</a>
+          <ul class="sub">
+            <li><a href="">만월경 이야기</a></li>
+            <li><a href="">만월경 비전</a></li>
+            <li><a href="">만월경을 만드는 사람들</a></li>
+            <li><a href="">만월경 BI</a></li>
+            <li><a href="">만월경 포토</a></li>
+          </ul>
         </li>
         <li>
           <a href="">만월경 메뉴</a>
+          <ul class="sub">
+            <li><a href="">맛 비결</a></li>
+            <li><a href="">음료</a></li>
+            <li><a href="">디저트</a></li>
+            <li><a href="">커피*디저트머신</a></li>
+          </ul>
         </li>
         <li>
           <a href="">만월경 매장</a>
+          <ul class="sub">
+            <li><a href="">매장 찾기</a></li>
+            <li><a href="">직영점</a></li>
+            <li><a href="">이 달의 매장</a></li>
+            <li><a href="">오픈예정매장</a></li>
+          </ul>
         </li>
         <li>
           <a href="">창업안내</a>
+          <ul class="sub">
+            <li><a href="">창업비용</a></li>
+            <li><a href="">기대수익</a></li>
+            <li><a href="">창업절차</a></li>
+            <li><a href="">가맹점 금융상품</a></li>
+            <li><a href="">창업상담신청</a></li>
+          </ul>
         </li>
         <li>
           <a href="">미디어</a>
+          <ul class="sub">
+            <li><a href="">자사미디어</a></li>
+            <li><a href="">미디어 속 만월경</a></li>
+          </ul>
         </li>
         <li>
           <a href="">공지 및 고객센터</a>
+          <ul class="sub">
+            <li><a href="">만월경 소식지</a></li>
+            <li><a href="">채용</a></li>
+            <li><a href="">상시채용관</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">고객의 소리</a></li>
+          </ul>
         </li>
+        <div class="bg">
+    
+        </div>
       </ul>
     </div>
   </header>
+  <div class="swiper manwolswiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/slide1.gif" alt="">
+        <div class="slide1">
+          <p>"달빛 아래,<br>&nbsp;&nbsp;나만의 작은 바다"</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <video src="images/slide2.mp4"autoplay muted loop></video>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slide3.webp" alt="">
+        <div class="slide3">
+          <h2>이달의 매장</h2>
+          <div class="slide3_sub">
+            <div class="slide3_sub2">
+              <img src="images/slide3_1.webp" alt="">
+              <p>분당효자촌점</p><br>
+              <p>소재지</p>
+              <p>경기 성남시 분당구 서현동</p>
+            </div>
+            <div class="slide3_sub2">
+              <img src="images/slide3_2.webp" alt="">
+              <p>구로개봉점</p><br>
+              <p>소재지</p>
+              <p>서울 구로구 개봉동</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div class="manwol2">
+    <div class="manwol2text">
+      <p>Cafe Manwolgyung</p>
+      <p>카페 만월경</p><br>
+      <p>혼자 있든, 함께 있든<br>
+        오늘의 기분이 어떻든</p><br>
+      <p>언제나 여기 이 자리에서<br>
+        기다리는 안식처.</p><br>
+      <p>손 닿을 거리에 당신 만의 작은 바다.<br>
+        24시간 빛이 꺼지지 않는 카페, 만월경입니다.</p>
+    </div>
+    <div class="manwol2image">
+      <img src="images/manwolmainbig.webp" alt="">
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/Manwol.js"></script>
 </body>
 </html>
