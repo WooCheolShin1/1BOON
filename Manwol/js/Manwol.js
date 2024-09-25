@@ -18,4 +18,14 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction : false,
+      }
     });
+
+    window.onload = function(){
+      setTimeout(function() {
+        scrollTo(0,0);
+      }, 100);
+    }
