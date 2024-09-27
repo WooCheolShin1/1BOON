@@ -58,19 +58,6 @@
 
    //==========================================================================//
 
-   //=========================푸터 고정형 ㅇㅇ==================================//
-
-  //  window.addEventListener('scroll', () => { 
-  //   if(window.scrollY > 2500) {
-  //     $('#foot').css('position', 'static');
-  //   }
-  //   else{
-  //     $('#foot').css('position', 'fixed');
-  //   }
-  // });
-
-  //==========================================================================//
-
     let btn = document.querySelectorAll(".wrap .button li");
     let ilboonmenu = document.querySelectorAll(".wrap .wrapimage .swiper .swiper-wrapper");
     let sil = document.querySelector(".wrap .wrapimage");

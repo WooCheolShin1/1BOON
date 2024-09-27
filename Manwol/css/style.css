@@ -9,6 +9,11 @@
   src: url(../font/nanumson2.ttf);
 }
 
+@font-face {
+  font-family: nanumson3;
+  src: url(../font/nanumson3.ttf);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -64,11 +69,11 @@ header{
 }
 
 .list > ul:hover {
-  background-color: #fff;
+  background-color: #0e0c23;
 }
 
 .list > ul:hover li > a{
-  color: #333;
+  color: #fff;
 }
 
 .list > ul > li a:hover{
@@ -85,6 +90,14 @@ header{
 
 .list > ul:hover ul.sub{
   display: block;
+}
+
+.list > ul:hover ul.sub > li > a{
+  color: #333;
+}
+
+.list > ul:hover ul.sub > li > a:hover{
+  color: #116dff;
 }
 
 .list ul:hover .bg{
@@ -105,10 +118,6 @@ ul.sub {
 
 ul.sub > li a{
   color: black;
-}
-
-ul.sub > li a:hover{
-  color: #116dff;
 }
 
 .bg{
@@ -218,6 +227,30 @@ ul.sub > li a:hover{
   font-weight: 700;
 }
 
+.arrowleft{
+  background: url(../images/arrowleft.png);
+  width: 70px;
+  height: 70px;
+  transform: translateY(-500px);
+  left: 3%;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.arrowright{
+  background: url(../images/arrowright.png);
+  width: 70px;
+  height: 70px;
+  transform: translateY(-500px);
+  right: 3%;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
 .manwol2 {
   padding-top: 120px;
   display: flex;
@@ -241,10 +274,13 @@ ul.sub > li a:hover{
   color: #0032A5;
   letter-spacing: -5px;
   font-family: nanumson;
+  font-weight: 700;
 }
 
 .manwol2 .manwol2text p{
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: nanumson3;
 }
 
 .manwol2 .manwol2image{
@@ -345,6 +381,7 @@ ul.sub > li a:hover{
   font-weight: 600;
   font-family: nanumson2;
   font-size: 30px;
+  transition: 0.2s;
 }
 
 .manwol4 .manwol4_sub_bg_1 p{
@@ -419,14 +456,145 @@ ul.sub > li a:hover{
 footer{
   width: 100%;
   background-color: #00205b;
+
+}
+
+footer #foot{
+  width: 100%;
+  padding: 40px;
+  background: #ffa149;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* #footer .fixed{
+  position: fixed;
+} */
+
+footer #foot .inner{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  top: 50%;
+  left: 0;
+  transform: translateY(-10%);
+}
+
+footer #foot > .inner > a {
+  color: #fff;
+  padding-left: 35px;
+  font-size: 23px;
+  letter-spacing: -1px;
+  background: url(../images/main/tel.png) no-repeat left center;
+  font-weight: bold;
+}
+
+footer #foot .inner > a span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+footer #foot > .inner .inner_input{
+  display: flex;
+  gap: 10px;
+}
+
+footer #foot > .inner .inner_input input{
+  padding: 0 20px;
+  border: 1px solid #ffe2b5;
+  background: none;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: -1px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+footer #foot > .inner .inner_input input:focus{
+  outline: none;
+}
+
+footer #foot > .inner .inner_input input::placeholder{
+  color: #fff;
+}
+
+footer #foot > .inner .inner_input > input:first-child{
+  margin-left: 30px;
+  width: 210px;
+}
+
+footer #foot > .inner .inner_input input:nth-child(2){
+  width: 180px;
+}
+
+footer #foot > .inner .inner_input .notrobot{
+  height: 50px;
+  line-height: 45px;
+  width: 150px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+footer #foot > .inner .inner_input .notrobot input {
+  border-radius: 2px;
+  background-color: #fff;
+  border: 2px solid #c1c1c1;
+  font-size: 1px;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
+
+footer #foot > .inner .inner_input .notrobot label {
+  vertical-align: middle;
+}
+
+footer #foot > .inner .inner_input button {
+  width: 150px;
+  border: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  background: #ff3d3d;
+  vertical-align: middle;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer #foot > .inner .inner_input .infocheck{
+  display: flex;
+  gap: 5px;
+  color: #fff;
+  line-height: 50px;
+  letter-spacing: -1px;
+  margin-left: 15px;
+}
+
+footer #foot > .inner .inner_input .infocheck > a{
+  color: #fff;
+  font-weight: 700;
+}
+
+footer #foot > .inner .inner_input .infocheck > a:hover{
+  text-decoration: underline;
 }
 
 footer img{
   height: 65px;
 }
 
-footer .inner{
-  padding: 30px 0 100px 0;
+footer > .inner{
+  padding: 20px 0 50px 0;
   max-width: 1000px;
   margin: 0 auto;
   color: #fff;

@@ -18,7 +18,7 @@
           <div class="head">
             <a href="#">
               <img src="images/manwolmain.webp" alt="">
-              <img src="images/manwoltext.webp" alt="">
+              <img src="images/manwoltext.webp" alt="" id="mask">
             </a>
           </div>
         </li>
@@ -91,8 +91,8 @@
           <p>"달빛 아래,<br>&nbsp;&nbsp;나만의 작은 바다"</p>
         </div>
       </div>
-      <div class="swiper-slide">
-        <video src="images/slide2.mp4"autoplay muted loop></video>
+      <div class="swiper-slide" id="video-slide">
+        <video id="video1" src="images/slide2.mp4"autoplay muted loop></video>
       </div>
       <div class="swiper-slide">
         <img src="images/slide3.webp" alt="">
@@ -115,8 +115,12 @@
         </div>
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    <div class="arrowleft">
+    </div>
+    <div class="arrowright">
+    </div>
   </div>
   <div class="manwol2">
     <div class="manwol2text">
@@ -201,6 +205,28 @@
     </div>
   </div>
   <footer>
+    <div id="foot" class="fixed">
+      <div class="inner">
+        <a href="">
+            창업문의
+          <span>1533-7025</span>
+        </a>
+        <div class="inner_input">
+          <input type="text" placeholder="고객명">
+          <input type="text" placeholder="연락처(-없이 입력하세요)">
+          <div class="notrobot">
+            <input type="checkbox" name="" id="">
+            <label>&nbsp;로봇이 아닙니다.</label>
+          </div>
+          <button>창업상담문의</button>
+           <div class="infocheck">
+            <input type="checkbox">
+            <label for="">개인정보수집 동의</label>
+            <a href="">[확인]</a>
+           </div>
+        </div>
+      </div>
+    </div>
     <div class="inner">
       <div class="inner1">
         <div class="inner_img">
