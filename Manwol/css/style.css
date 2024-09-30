@@ -263,13 +263,13 @@ ul.sub > li a{
   width: 70%;
 }
 
-.manwol2 .manwol2text p:first-child{
+.manwol2 .manwol2text > #scrollmanwol > p:first-child{
   font-size: 50px;
   color: #002975;
   font-family: nanumson;
 }
 
-.manwol2 .manwol2text p:nth-child(2){
+.manwol2 .manwol2text > #scrollmanwol > p:nth-child(2){
   font-size: 80px;
   color: #0032A5;
   letter-spacing: -5px;

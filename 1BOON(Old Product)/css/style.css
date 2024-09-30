@@ -14,7 +14,8 @@ a{
 }
 
 body{
-  background-image: url(https://cafeilboon.com/theme/default/images/main/main_sec01_bg.jpg);
+  background-image: url(http://www.cafebombom.co.kr/img/main/bg_sec06.png);
+  background-size: cover;
 }
 
 header{
@@ -249,6 +250,7 @@ ul.sub > li:hover a{
   max-width: 1300px;
   margin: 0 auto;
   padding: 10px 0 50px;
+  background-image: url();
 }
 
 .wrap .button{
@@ -334,7 +336,6 @@ ul.sub > li:hover a{
   width: 70px;
   height: 70px;
   transform: translateY(140px);
-  top: 10%;
   left: 10%;
   position: absolute;
   border: 0;

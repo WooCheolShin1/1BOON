@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+
+    header{
+      height: 10%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      position: sticky;
+      z-index: 999;
+      top: 0;
+    }
+
+    .list{
+      margin: 0 auto;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+    }
+
+    .list > ul{
+      display: flex;
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      letter-spacing: -1px;
+      background-color: #184a3a;
+    }
+
+    .list > ul > li{
+      font-weight: 700;
+      position: relative;
+      width: 120px;
+    }
+
+    .list > ul:nth-child(3) li{
+      margin-left: 450px;
+    }
+
+    .head a img{
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="list">
+      <ul>
+        <li>
+          <div class="head">
+            <a href="">
+              <img src="images/bando_logo.png" alt="">
+            </a>
+          </div>
+        </li>
+      </ul>
+        <ul>
+          <li>
+            <a href="">사업개요</a>
+            <ul class="sub">
+              <li>사업개요</li>
+              <li>오시는길</li>
+            </ul>
+          </li>
+          <li>
+            <a href="">브랜드소개</a>
+          </li>
+          <li>
+            <a href="">프리미엄</a>
+            <ul class="sub">
+              <li>프리미엄8</li>
+              <li>입지환경</li>
+            </ul>
+          </li>
+          <li>
+            <a href="">앵커테넌트</a>
+          </li>
+          <li>
+            <a href="">홍보센터</a>
+            <ul class="sub">
+              <li>보도자료</li>
+              <li>홍보영상</li>
+              <li>유튜브영상</li>
+              <li>이벤트당첨</li>
+            </ul>
+          </li>
+          <li>
+            <a href="">관심고객등록</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div class="right">
+              <a href="">1800.1600</a>
+            </div>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </header>
+</body>
+</html>
