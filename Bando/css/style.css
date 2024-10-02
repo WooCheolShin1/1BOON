@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+}
+
+.head{
+  position: relative;
+}
+
+.list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.list > ul{
+  display: flex;
+  letter-spacing: -1px;
+}
+
+.list > ul > li{
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  width: 120px;
+  z-index: 1;
+}
+
+.list > ul > li > a{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  color: #fff;
+  line-height: 100px;
+}
+
+.list > ul > li a:hover{
+  color: red;
+}
+
+.list > ul:nth-child(3) li{
+  margin-left: 450px;
+}
+
+ul.sub{
+  white-space: nowrap;
+  line-height: 30px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 73px;
+  height: 150px;
+  width: 100%;
+  color: #fff;
+}
+
+ul.sub > li:first-child {
+  padding-top: 60px;
+}
+
+ul.sub > li {
+  padding-top: 5px;
+}
+
+ul.sub > li > a{
+  color: #fff;
+}
+
+ul.sub > li > a:hover{
+  color: rgb(179, 133, 80);
+}
+
+.bg{
+  position: absolute;
+  background-color: #184a3a;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.2s;
+  z-index: -1;
+}
+
+.head a img{
+  padding: 30px;
+}
+
+.tail{
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  line-height: 95px;
+  color: #fff;
+  margin-right: 50px;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+.main_visual .video_visual{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+}
+
+.edit{
+  position: relative;
+  background: #f7f6f5;
+  padding: 100px 0 80px 0;
+  overflow: hidden;
+}
+
+.edit .inner{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.edit .inner .edit_main{
+  width: 700px;
+}
+
+.edit .inner .edit_main p:first-child{
+  color: #565656;
+  font-size: 26px;
+}
+
+.edit .inner .edit_main p:nth-child(2){
+  color: #1d1c19;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+
+.edit .inner .edit_main img{
+  transform: translateY(-30px);
+  max-width: 100%;
+  width: 590px;
+}
+
+.main_visual .main_quick{
+  position: fixed;
+  top: 130px;
+  z-index: 9999;
+  right: 30px;
+}
+
+.main_visual .main_quick > div{
+  margin-bottom: 10px !important;
+}
+
+.main_visual .main_quick > div > p img{
+  border-radius: 20px;
+  max-width: 100%;
+  width: 90px;
+}
+
+.main_visual .main_quick > div > a{
+  display: block;
+  position: relative;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  border-radius: 20px;
+}
+
+.main_visual .main_quick .main_quick2 > p > a img,
+.main_visual .main_quick .main_quick3 > p > a img,
+.main_visual .main_quick .main_quick4 > p > a img
+{
+  transition: 0.3s ease-in-out;
+}
+
+.main_visual .main_quick .main_quick2 > p > a img:hover{
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px rgba(6, 16, 28, 1),
+              inset -1px 0 25px rgba(27, 76, 138, 0.5), 1px 0 25px rgba(27, 76, 138, 0.5), 
+              -1px 0 25px rgba(27, 76, 138, 0.5), 1px 0 25px rgba(27, 76, 138, 0.5);
+}
+
+.main_visual .main_quick .main_quick3 > p > a img:hover,
+.main_visual .main_quick .main_quick4 > p > a img:hover{
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px rgba(6, 16, 28, 1),
+              inset -1px 0 25px rgba(30, 177, 134, 0.5), 1px 0 25px rgba(30, 177, 134, 0.5), 
+              -1px 0 25px rgba(30, 177, 134, 0.5), 1px 0 25px rgba(30, 177, 134, 0.5);
+}
+
+.swiper-slide{
+  display: flex !important;
+}
+
+.slidefont{
+  width: 620px;
+  flex-shrink: 0;
+}
+
+.slideimg{
+  margin-bottom: 100px;
+}
+
+.slidefont p:nth-of-type(1){
+  font-weight: 700;
+  font-size: 19px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.slidefont p:nth-of-type(2){
+  font-weight: 500;
+  font-size: 19px;
+  color: #534d45;
+}
+
+.slidefont p:nth-of-type(3){
+  color: #003c2d;
+  font-size: 41px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.slidefont span{
+  color: #a65e56;
+}
+
+.slidefont b{
+  font-size: 16px;
+}

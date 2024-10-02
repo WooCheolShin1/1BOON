@@ -5,117 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>반도건설</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-
-    ul{
-      list-style: none;
-    }
-
-    a{
-      text-decoration: none;
-      color: white;
-    }
-
-    header{
-      height: 10%;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      position: sticky;
-      z-index: 999;
-      top: 0;
-    }
-    
-    .head{
-      position: relative;
-    }
-
-    .list{
-      width: 100%;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      background-color: #184a3a;
-    }
-
-    .list > ul{
-      display: flex;
-      line-height: 70px;
-      justify-content: center;
-      letter-spacing: -1px;
-    }
-
-    .list > ul > li{
-      font-weight: 700;
-      position: relative;
-      text-align: center;
-      width: 140px;
-    }
-
-    .list > ul > li > a{
-      position: relative;
-      height: 80px;
-      width: 100%;
-    }
-
-    .list > ul:nth-child(3) li{
-      margin-left: 450px;
-    }
-
-    ul.sub{
-      white-space: nowrap;
-      line-height: 30px;
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 80px;
-      height: 150px;
-      width: 100%;
-    }
-
-    .list ul:hover ul.sub{
-      display: block;
-    }
-
-    .bg{
-      position: absolute;
-      background-color: red;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 0;
-      transition: 0.4s;
-      z-index: -1;
-    }
-
-    .list ul:hover ~.bg {
-      height: 230px;
-    }
-
-    .head a img{
-      padding: 15px;
-    }
-
-    .tail{
-      font-size: 26px;
-      font-weight: 600;
-      position: relative;
-    }
-
-    .main_visual .video_visual{
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      height: 100vh;
-    }
-  </style>
 </head>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <body>
   <header>
     <div class="list">
@@ -128,34 +22,43 @@
           <li>
             <a href="">사업개요</a>
             <ul class="sub">
-              <li>사업개요</li>
-              <li>오시는길</li>
+              <li><a href="">사업개요</a></li>
+              <li><a href="">오시는길</a></li>
             </ul>
           </li>
           <li>
             <a href="">브랜드소개</a>
+            <ul class="sub">
+
+            </ul>
           </li>
           <li>
             <a href="">프리미엄</a>
             <ul class="sub">
-              <li>프리미엄8</li>
-              <li>입지환경</li>
+              <li><a href="">프리미엄8</a></li>
+              <li><a href="">입지환경</a></li>
             </ul>
           </li>
           <li>
-            <a href="">앵커테넌트</a>
+            <a href=""><a href="">앵커테넌트</a></a>
+            <ul class="sub">
+
+            </ul>
           </li>
           <li>
             <a href="">홍보센터</a>
             <ul class="sub">
-              <li>보도자료</li>
-              <li>홍보영상</li>
-              <li>유튜브영상</li>
-              <li>이벤트당첨</li>
+              <li><a href="">보도자료</a></li>
+              <li><a href="">홍보영상</a></li>
+              <li><a href="">유튜브영상</a></li>
+              <li><a href="">이벤트당첨</a></li>
             </ul>
           </li>
           <li>
             <a href="">관심고객등록</a>
+            <ul class="sub">
+
+            </ul>
           </li>
           
         </ul>
@@ -164,14 +67,137 @@
           </div>
       </ul>
       <div class="bg">
-    
+        
       </div>
     </div>
   </header>
   <div class="main_visual">
     <div class="video_visual">
-      <video src="images/video.mp4"></video>
+      <video src="images/video.mp4" autoplay infinite muted loop></video>
+    </div>
+    <div class="main_quick">
+      <div class="main_quick1">
+        <p><img src="images/open_img.jpg" alt=""></p>
+      </div>
+      <div class="main_quick2">
+        <p>
+          <a href="#"><img src="images/apt_go.jpg" alt=""></a>
+        </p>
+      </div>
+      <div class="main_quick3">
+        <p>
+          <a href="#"><img src="images/quick_img.jpg" alt=""></a>
+        </p>
+      </div>
+      <div class="main_quick4">
+        <p>
+          <a href="#"><img src="images/quick_blog.jpg" alt=""></a>
+        </p>
+      </div>
     </div>
   </div>
+  <div class="edit">
+    <div class="inner">
+      <div class="edit_main">
+        <p>시간이 흘러도 변치 않을 가치</p>
+        <p>일산호수공원 프리미엄 상업시설</p>
+        <img src="images/premium_tit.png" alt="">
+      </div>
+      <div class="wrapimage">
+        <div class="swiper">
+          <ul class="swiper-wrapper slidemain">
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 1</p>
+                <p>고향 장항지구 최초 주상복합</p>
+                <p>최대규모 프리미엄 브랜드몰</p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                <img src="images/slide/photo1.jpg" alt="">
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 2</p>
+                <p>풍부한 광역 수요 상권</p>
+                <p>일산 호수공원 연간 방문<br><span>약 600만명</span></p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                <img src="images/slide/photo2.jpg" alt="">
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 3</p>
+                <p>고양특례시 거주 인구</p>
+                <p><span>약 107만명</span>의 풍부한 배후수요</p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 4</p>
+                <p>고양 장항지구 주거단지</p>
+                <p><span>약 2만 7천명</span>의 탄탄한 직접수요</p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 5</p>
+                <p>대형서점, 셀렉다이닝, 키즈컨텐츠, SSM 등</p>
+                <p>반도건설 <span>직접 운영</span> 관리<b>(계획)</b></p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 6</p>
+                <p>안정적인 상권 활성화 기대</p>
+                <p>마스터리스 <span>5년</span> 확정수익 보장<b>(계획)</b></p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 7</p>
+                <p>안정적인 테넌트 입점 기대</p>
+                <p><span>안심임대 지원</span> 프로그램 제공<b>(계획)</b></p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="slidefont">
+                <p>PREMIUM 8</p>
+                <p>계약 익월부터 준공 전월까지 수익 발생</p>
+                <p>계약금 연 <span>5%</span> 이자 지원제<b>(계획)</b></p>
+                <p>More View</p>
+              </div>
+              <div class="slideimg">
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <script src="js/bando.js"></script>
 </body>
 </html>
