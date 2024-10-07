@@ -130,16 +130,18 @@ ul.sub > li > a:hover{
   background: #f7f6f5;
   padding: 100px 0 80px 0;
   overflow: hidden;
+  padding-left: 200px;
 }
 
 .edit .inner{
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  height: 900px;
 }
 
 .edit .inner .edit_main{
-  width: 700px;
+  width: 600px;
 }
 
 .edit .inner .edit_main p:first-child{
@@ -165,6 +167,16 @@ ul.sub > li > a:hover{
   top: 130px;
   z-index: 9999;
   right: 30px;
+}
+
+.wrapimage{
+  position: relative;
+  bottom: 230px;
+}
+
+.slideimg > img{
+  width: 1050px;
+  height: 800px;
 }
 
 .main_visual .main_quick > div{
@@ -213,10 +225,7 @@ ul.sub > li > a:hover{
 .slidefont{
   width: 620px;
   flex-shrink: 0;
-}
-
-.slideimg{
-  margin-bottom: 100px;
+  margin-top: 300px;
 }
 
 .slidefont p:nth-of-type(1){
@@ -239,10 +248,214 @@ ul.sub > li > a:hover{
   margin-bottom: 30px;
 }
 
+.slidefont p:nth-of-type(4){
+  cursor: pointer;
+}
+
 .slidefont span{
   color: #a65e56;
 }
 
 .slidefont b{
   font-size: 16px;
+}
+
+.arrow{
+  display: flex;
+  position: relative;
+  top: -65px;
+  left: 560px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.edit2{
+  display: flex;
+}
+
+.edit2 .edit2_2{
+  padding: 80px;
+}
+
+.edit2 .edit2_2 p a{
+  display: inline-block;
+  background: #003c2d;
+  width: 92%;
+  height: 55px;
+  line-height: 55px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+.edit2 .edit2_2 p a:hover{
+  background-color: #a65e56;
+}
+
+.edit3{
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  background: rgb(223, 217, 201);
+  background: linear-gradient(180deg, rgba(223, 217, 201, 1) 40%, rgba(23, 74, 58, 1) 40%);
+}
+
+.edit3 .movie_edit{
+  max-width: 1600px;
+  width: 94%;
+  margin: 100px auto 0;
+  display: flex;
+}
+
+.edit3 .movie_edit .edit3_1{
+  margin-right: 40px;
+  width: 980px;
+  flex-shrink: 0;
+}
+
+.edit3 .movie_edit .edit3_1 .movie {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 45.25%;
+  height: 0;
+  line-height: 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.edit3 .movie_edit .edit3_1 .movie video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edit3 .movie_edit .edit3_2{
+  margin-left: auto;
+  text-align: center;
+  padding-right: 20px;
+  width: 40%;
+  position: relative;
+  bottom: 76px;
+}
+
+.edit3 .movie_edit .edit3_2 p:nth-child(1){
+  font-size: 18px;
+  color: #174a3a;
+}
+
+.edit3 .movie_edit .edit3_2 p:nth-child(2){
+  font-size: 35px;
+  color: #174a3a;
+  font-weight: 600;
+  margin: 0px 0 25px 0;
+  letter-spacing: -2px;
+}
+
+.edit3 .movie_edit .edit3_2 p:nth-child(3){
+  padding: 15px 10px;
+  background: #dfd9c9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit3 .movie_edit .edit3_2 > div {
+  text-align: left;
+  color: #dfd9c9;
+  font-size: 15px;
+  margin: 30px 0;
+}
+
+.edit3 .movie_edit .edit3_2 a{
+  background: #c29f81;
+  display: block;
+  line-height: 50px;
+  color: #174a3a;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.4s ease-out;
+}
+
+.edit3 .movie_edit .edit3_2 a:hover{
+  background: #333;
+  color: #fff;
+}
+
+.edit3 .icon{
+  width: 1300px;
+  margin: 80px auto 0;
+}
+
+.edit3 .icon ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.edit3 .icon ul li{
+  text-align: center;
+  flex: 1 0 25%;
+  transition: all 0.4s ease-out;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit3 .icon ul li i{
+  font-size: 50px;
+  color: #c29f81;
+}
+
+.edit3 .icon ul li:hover{
+  transform: translateY(-30px);
+}
+
+.edit3 .icon ul li:hover i {
+  color: #fff;
+}
+
+.edit3 .icon ul li p:nth-of-type(1){
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer{
+  background: #1c1c22;
+  padding: 100px;
+}
+
+footer .inner{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 1600px;
+  width: 94%;
+}
+
+footer .inner > div{
+  flex-grow: 2;
+}
+
+footer .inner  .margin20{
+  margin-bottom: 20px;
+}
+
+footer .inner > div:first-child p{
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer .inner > div:last-child{
+  text-align: right;
+}
+
+footer .inner > div:last-child p{
+  font-size: 37px;
+  color: #fff;
+  font-weight: 700;
 }
