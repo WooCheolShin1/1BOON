@@ -17,9 +17,47 @@ header{
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   top: 0;
+}
+
+.top_area{
+  z-index: 1000;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.top_area .top_banner{
+  background: #fba51c;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.top_area .top_banner .top_sale{
+  text-align: center;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.top_area .top_banner .top_sale a{
+  color: #fff;
+}
+
+.btn_close{
+  display: block;
+  position: absolute;
+  top: 23%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 9999;
 }
 
 .head{
@@ -37,9 +75,7 @@ header{
   width: 100%;
   padding: 0px 50px;
   display: flex;
-  background-color: transparent;
-  color: #fff;
-  position: fixed;
+  background: none;
 }
 
 .list > ul{
@@ -132,6 +168,20 @@ header{
 
 .main_visual .main_quick > div{
   margin-bottom: 10px !important;
+}
+
+.main_visual .main_quick{
+  transition: 0.4s;
+}
+
+.main_visual .main_quick .main_quick6{
+  display: none;
+  padding: 10px 20px;
+}
+
+.main_visual .main_quick .main_quick6 > p > a > img{
+  width: 40px;
+  height: 40px;
 }
 
 .visual2{
@@ -334,4 +384,102 @@ header{
   flex-wrap: nowrap;
   background-color: #f0e9df;
   padding: 37px;
+}
+
+.visual5_list{
+  width: 1504px;
+  margin: 0 auto;
+}
+
+.visual5_list > ul{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  /* font-size 0의 경우 inline 역할도 하기 때문에 공백을 지워준다고함.
+  그게 싫으면 그냥 display block을 주라고 하네 ㅇㅇ*/
+}
+
+.visual5_list > ul img{
+  display: inline-block;
+}
+
+.visual5_list > ul > li{
+  position: relative;
+  cursor: pointer;
+}
+
+.visual5_list > ul > li .over{
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+}
+
+.visual5_list > ul > li:hover .over{
+  background: rgba(0,0,0,0.5);
+}
+
+.visual5_list > ul > li .over p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.visual5_list > ul > li .over .inner{
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.visual5_list > ul > li .over .inner p:first-child{
+  opacity: 0;
+  transition: 0.5s 0.2s;
+  margin-bottom: 20px;
+}
+
+.visual5_list > ul > li .over .inner p:nth-child(2){
+  margin-bottom: -10px;
+}
+
+.visual5_list > ul > li .over .inner p:last-child{
+  background-color: #fff;
+  font-size: 13px;
+  opacity: 0;
+  transition: 0.5s 0.2s;
+  margin: 20px auto;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.visual5_list>ul >li .over .inner p:last-child a{
+  color: black;
+}
+
+.visual5_list > ul > li .over .inner p:last-child:hover a{
+  background-color: black;
+  color: #fff;
+  display: block;
+}
+
+.visual5_list > ul > li:hover .over .inner p:last-child{
+  opacity: 1;
+}
+
+.visual5_list > ul > li:hover .over .inner p:first-child{
+  opacity: 1;
+}
+
+.visual5_list > ul > li .over a{
+  opacity: 1;
+}
+
+.visual5_list > ul > li:hover .over .inner {
+  transform: translateY(-20px);
 }

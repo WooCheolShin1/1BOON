@@ -138,7 +138,6 @@ ScrollTrigger.create({
   end:"+=0",
   scrub: 5,
   anticipatePin: 1,
-  markers: true,
 })
 
 ScrollTrigger.create({
