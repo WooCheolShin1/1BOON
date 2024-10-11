@@ -23,4 +23,17 @@ window.onload = function(){
     $('.top_area').css('display', 'none');
     // $('ul.sub').css('height', '190px');
     // $('.login').css('top', '50%');
-   });
+  });
+
+  var swiper = new Swiper(".visualslide", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false
+    },
+    speed: 5000,
+    allowTouchMove: false,
+  });
