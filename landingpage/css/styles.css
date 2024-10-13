@@ -2845,8 +2845,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #000000;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #1a29cf;
   --bs-btn-hover-border-color: #1826c2;
@@ -11771,7 +11771,7 @@ html {
 
 .ottogi ul li:nth-child(1){
   background: url(../images/Old1BOON.png);
-  background-position: 40%;
+  background-position: 50%;
 }
 
 /* .ottogi ul li:nth-child(1) > a > p:first-child,
@@ -11781,17 +11781,17 @@ html {
 
 .ottogi ul li:nth-child(2){
   background: url(../images/Manwol.png);
-  background-position: 40%;
+  background-position: 47%;
 }
 
 .ottogi ul li:nth-child(3){
   background: url(../images/Bando.png);
-  background-position: 30%;
+  background-position: 50%;
 }
 
 .ottogi ul li:nth-child(4){
   background: url(../images/New1BOON.png);
-  background-position: 30%;
+  background-position: 20%;
 }
 
 .ottogi ul li a{
@@ -11818,6 +11818,11 @@ html {
 
 .ottogi ul li a p:nth-child(3){
   margin-top: 50px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 0 20px;
 }
 
 .ottogi ul li a p:nth-child(4){
@@ -11831,7 +11836,7 @@ html {
   transition: 0s;
 }
 
-.ottogi ul:hover li:hover{
+.ottogi ul li:hover{
   width: 250%;
   background-size: cover;
 }
@@ -11847,7 +11852,7 @@ html {
 .ottogi ul li:hover a p:nth-child(3),
 .ottogi ul li:hover a p:nth-child(4){
   opacity: 1;
-  transition: 4s;
+  transition: 2s;
 }
 
 /* .ottogi ul li:nth-child(1):hover > a > p:first-child,
@@ -11860,12 +11865,17 @@ html {
 }
 
 .class2{
-  display: flex;
-  gap: 20px;
+  width: 100%;
+}
+
+.class_resume{
+  width: 700px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
 }
 
 .about{
-  margin-top: 40px;
+  margin: 40px 0;
   display: flex;
   gap: 20px;
 }
@@ -11873,4 +11883,40 @@ html {
 .about .about_main > p{
   color: plum;
   font-weight: bold;
+}
+
+.btn1, .btn2 {
+  background-color: #e21e80;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn1:hover, .btn2:hover{
+  background-color: purple;
+  border: 1px solid #fff;
+}
+
+.project_explain{
+  display: flex;
+  width: 100%;
+}
+
+.project_explain .project_explain1 {
+  margin: 0 auto;
+}
+
+.project_explain .project_explain1 p{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.project_explain .project_explain1 p span{
+  color: red;
+  display: none;
+}
+
+.project_explain .project_explain1 p:last-child span{
+  color: blue;
 }
