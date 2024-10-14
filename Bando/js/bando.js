@@ -133,7 +133,6 @@ ani8.from("#scrollbando8", {
 
 ScrollTrigger.create({
   animation: ani1,
-  trigger:"#scrollmanwol",
   start:"+=500",
   end:"+=0",
   scrub: 5,
@@ -142,7 +141,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani2,
-  trigger:"#scrollmanwol2",
   start:"+=500",
   end:"+=0",
   scrub: 5,
@@ -152,7 +150,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani3,
-  trigger:"#scrollmanwol3",
   start:"+=500",
   end:"+=0",
   scrub: 5,
@@ -161,7 +158,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani4,
-  trigger:"#scrollmanwol4",
   start:"+=1300",
   end:"+=0",
   scrub: 5,
@@ -170,7 +166,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani5,
-  trigger:"#scrollmanwol5",
   start:"+=1500",
   end:"+=0",
   scrub: 5,
@@ -180,7 +175,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani6,
-  trigger:"#scrollmanwol6",
   start:"+=1700",
   end:"+=0",
   scrub: 5,
@@ -189,7 +183,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani7,
-  trigger:"#scrollmanwol7",
   start:"+=2300",
   end:"+=0",
   scrub: 5,
@@ -199,7 +192,6 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   animation: ani8,
-  trigger:"#scrollmanwol8",
   start:"+=2300",
   end:"+=0",
   scrub: 5,
