@@ -99,6 +99,8 @@
       })
     }
 
+    let ww = window.innerWidth;
+
     var swiper = new Swiper('.wrapimage .swiper', {
       slidesPerView: 4,
       loop: true,
@@ -115,14 +117,30 @@
         delay: 3000,
         disableOnInteraction : false,
       },
-
-      // breakpoints: {
-      //   1320: {
-      //     slidesPerView : 3,
-      //   }
-      // }
-    });
+    }
+  );
+  responsiveSwiper();
     
+  function responsiveSwiper() {
+    if (ww < 1320) {
+      swiper = new Swiper('.wrapimage .swiper', {
+        loop: true,
+        slidesPerView: 3,
+      });
+    } else if (ww < 760) {
+      swiper = new Swiper('.wrapimage .swiper', {
+        loop: true,
+        slidesPerView: 2,
+      });
+    }
+  }
+
+  window.addEventListener('resize', function() {
+    ww = window.innerWidth;
+    swiper.destroy();
+    responsiveSwiper();
+  });
+
     var swiper = new Swiper(".mySwiper2", {
       spaceBetween: 30,
       effect: "fade",

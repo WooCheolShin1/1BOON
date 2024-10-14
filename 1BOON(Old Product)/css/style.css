@@ -244,6 +244,7 @@ ul.sub > li:hover a{
   text-align: center;
   font-size: 50px;
   color: #fba51c;
+  font-family: kanitablack;
 }
 
 .wrap{
@@ -260,8 +261,17 @@ ul.sub > li:hover a{
   justify-content: center;
 }
 
+.wrap .button .button1{
+  display: flex;
+}
+
+.wrap .button .button2{
+  display: flex;
+}
+
 .wrap .button li{
   padding: 0px 25px;
+  font-family: kanitablack;
 }
 
 .wrap .button li a{
@@ -375,6 +385,7 @@ ul.sub > li:hover a{
   font-size: 50px;
   line-height: 60px;
   color: #000;
+  font-family: kanitablack;
 }
 
 .wrap2 > .inner > h1 > span{
@@ -470,6 +481,7 @@ ul.sub > li:hover a{
   font-size: 50px;
   line-height: 60px;
   color: #f28300;
+  font-family: kanitablack;
 } 
 
 .wrap3 > .inner > p:nth-of-type(1){
@@ -503,6 +515,7 @@ ul.sub > li:hover a{
 
 .wrap4 .inner .inner_text{
   position: absolute;
+  font-family: nanum;
   top: 50%;
   left: 320px;
   transform: translateY(-50%);
@@ -510,17 +523,17 @@ ul.sub > li:hover a{
 
 .wrap4 .inner .inner_text p:first-child{
   color: #fff;
-  font-size: 16px;
+  font-size: 35px;
   font-weight: 700;
 }
 
 .wrap4 .inner .inner_text p:nth-child(2){
-  color: #fff;
-  font-size: 40px;
+  color: #f28300;
+  font-size: 50px;
   line-height: 46px;
   margin-top: 5px;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .wrap4 .inner .inner_text .viewbtn{
@@ -535,6 +548,7 @@ ul.sub > li:hover a{
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .wrap4 .inner .inner_text .viewbtn:hover{
@@ -955,6 +969,16 @@ ul.sub > li:hover a{
 .quickbutton a img{
   margin-top: 20px;
 }
+
+@font-face {
+  font-family: kanitablack;
+  src: url(../fonts/Kanit-Black.ttf);
+}
+
+@font-face {
+  font-family: nanum;
+  src: url(../fonts/nanum.ttf);
+}
 /*=================================반응형 구간================================*/
 
 @media screen and (max-width:1720px) {
@@ -975,5 +999,86 @@ ul.sub > li:hover a{
 @media screen and (max-width: 1320px) { 
   .wrap2 .inner .swiper-slide p:nth-of-type(2){
     left: 35%;
+  }
+
+  #footer #foot{
+    padding-bottom: 0;
+  }
+
+  #footer #foot > .inner{
+    display: block;
+  }
+
+  #footer #foot > .inner .inner_input{
+    display: block;
+  }
+
+  #footer #foot > .inner > a{
+    display: none;
+  }
+
+  #footer #foot > .inner .inner_input > input:first-child{
+    width: 95%;
+    margin: 20px 20px;
+    height: 30px;
+  }
+
+  #footer #foot > .inner .inner_input > input:nth-child(2){
+    width: 95%;
+    margin: 0px 20px;
+    height: 30px;
+  }
+
+  #footer #foot > .inner .inner_input > .notrobot{
+    width: 91.8%;
+    margin: 20px 0 0px 20px;
+    height: 30px;
+    line-height: 25px;
+  }
+
+  #footer #foot > .inner .inner_input > .notrobot input{
+    width: 15px;
+    height: 15px;
+  }
+
+  #footer #foot > .inner .inner_input button {
+    width: 95%;
+    margin: 20px 0 0px 20px;
+    height: 30px;
+    line-height: 0;
+  }
+
+  #footer #foot > .inner .inner_input .infocheck{
+    margin-left: 20px;
+  }
+
+  #flex1{
+    width: 80%;
+  }
+
+  .wrap3 > .inner iframe{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1240px){
+  .wrap .button{
+    display: block;
+  }
+
+  .wrap .button1{
+    justify-content: center;
+  }
+
+  .wrap .button2{
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrap2 > .inner > h1,
+  .wrap3 > .inner > h1{
+    font-size: 30px;
   }
 }
