@@ -1118,6 +1118,10 @@ ul.sub > li:hover a{
     margin-top: 10px;
     justify-content: center;
   }
+
+  .menu .submenu > li > ul > li{
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1137,6 +1141,7 @@ ul.sub > li:hover a{
   right: 0; 
   z-index: 99999;
   overflow: hidden;
+  position: fixed;
 }
 
 .menu ul li a {
@@ -1144,7 +1149,7 @@ ul.sub > li:hover a{
 }
 
 .menu ul.submenu {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 60px;
 }
 
@@ -1166,18 +1171,30 @@ ul.sub > li:hover a{
 .menu .submenu > li{
   font-size: 30px;
   font-weight: 900;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
+  color: #f28300;
+  font-family: kanitablack;
+  cursor: pointer;
 }
 
 .menu .submenu > li > ul{
   display: flex;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 700;
   gap: 20px;
 }
 
 .menu .submenu > li > ul > li{
   display: flex;
+}
+
+ul.sub_2{
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.menu .submenu > li:hover ul.sub_2{
+  opacity: 1;
 }
 
 .menu .submenu > li > ul > li > a:hover{
@@ -1193,19 +1210,33 @@ ul.sub > li:hover a{
   background: #f28300;
   padding: 20px 0;
   padding-right: 40px;
-}
-
-.menu .submenu > li:last-child ul > li > a{
+  border-radius: 30px;
   color: #fff;
 }
 
-.menu .submenu > li:last-child ul > li > a:hover{
+.menu .submenu > li:last-child > a{
+  color: #fff;
+}
+
+.menu .submenu > li:last-child > a:hover{
   text-decoration: underline;
 }
 
-.menu .undermenu{width: 90%;display: flex;justify-content: space-between;align-items: center;margin: 0 auto;}
+.menu .undermenu{
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .menu .undermenu .info{flex-basis: 50%;line-height: 50px;}
-.menu .undermenu .about ul{display: flex;gap: 10px;font-weight: 700;font-size: 16px;}
+
+.menu .undermenu .about ul{
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .menu .undermenu .about ul li:first-child:after{content: "";position: absolute;top: 0;left: 0;width: 1px;height: 10px;background: #000;}
 .menu .undermenu .info>li span{width: 10px;height: 10px;}
 .menu .undermenu .info>li span img{width: 170px;object-fit: cover;}
