@@ -97,8 +97,89 @@
             </li>
           </ul>
         </div>
+        <div class="logo-slide">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        </div>
       </div>
     </header>
+    <div class="menu">
+      <p><img src="images/main/black_X.svg" alt="black_X"></p>
+      <ul class="submenu">
+        <li>
+          카페일분
+          <ul>
+            <li><a href="">브랜드소개</a></li>
+            <li><a href="">오시는길</a></li>
+          </ul>
+        </li>
+        <li>
+          상품안내
+            <ul>
+              <li><a href="">커피이야기</a></li>
+              <li><a href="">신메뉴</a></li>
+              <li><a href="">전체메뉴</a></li>
+            </ul>
+        </li>
+        <li>
+           무인카페 시장의 비젼
+           <ul>
+            <li><a href="">무인카페 시장의 비젼</a></li>
+           </ul>
+        </li>
+        <li>
+          성공창업안내
+          <ul>
+            <li><a href="">창업절차</a></li>
+            <li><a href="">무인카페머신</a></li>
+            <li><a href="">창업비용</a></li>
+            <li><a href="">창업강의</a></li>
+            <li><a href="">창업상담신청</a></li>
+          </ul>
+        </li>
+        <li>
+          매장찾기
+          <ul>
+            <li><a href="">매장찾기</a></li>
+           </ul>
+        </li>
+        <li>
+          커뮤니티
+          <ul>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">1:1문의</a></li>
+           </ul>
+        </li>
+        <li>
+          제품구매
+          <ul>
+            <li><a href="">원두</a></li>
+            <li><a href="">텀블러</a></li>
+            <li><a href="">머그컵</a></li>
+           </ul>
+        </li>
+        <li><a href="">로그인</a>/<a href="">회원가입</a></li>
+      </ul>
+      <div class="undermenu">
+          <ul class="info">
+              <li class="about">
+                  <ul>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">NEWSLETTER</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><strong>© PLAYLIFE</strong> by <span><img src="images/lipf_logo.png" alt=""></span>.All rights reserved.</a></li>
+          </ul>
+          <ul class="sns">
+              <li><img src="images/icon_youtube_white.svg" alt=""></li>
+              <li><img src="images/icon_insta_white.svg" alt=""></li>
+          </ul>
+      </div>
+  </div>
     <div class="title">
       <h1>CAFEILBOON MENU</h1>
     </div>
@@ -646,6 +727,26 @@
       $('#foot').css('position', 'fixed');
     }
   });
+
+  $(function(){
+        let txt = true; 
+      $(".menu>p").click(function(){
+        if(txt){
+          $(".menu").animate({width:"59.375%"},500,"linear");  
+        }else{
+            $(".menu").animate({width:"0"},500,"linear");   
+        }
+        txt = !txt;
+         });
+         $(".logo-slide>ul").click(function(){
+            if(txt){
+          $(".menu").animate({width:"50%"},500,"linear");  
+        }else{
+            $(".menu").animate({width:"0"},500,"linear");   
+        }
+        txt = !txt;
+         })
+    });
   </script>
 </body>
 </html>
