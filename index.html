@@ -16,11 +16,27 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        body{
+            background-image: url(../images/effort.jpg);
+            background-size: cover;
+        }
+
+        body::after{
+          content: '';
+          position: absolute;
+          background: white;
+          z-index: -1;
+          inset: 0;
+          opacity: 0.8;
+          margin: 0;
+        }
+    </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Growing Publisher</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -73,7 +89,7 @@
                                 <div class="profile bg-gradient-primary-to-secondary">
                                     <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
                                     <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="" alt="..." />
+                                    <img class="profile-img" src="images/photo.jpg" alt="..." />
                                     <div class="dots-1">
                                         <!-- SVG Dots-->
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
@@ -213,7 +229,7 @@
             </section> -->
         </main>
         <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
+        <footer class="py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">Copyright ShinWooCheol All Right Reserved.</div></div>
@@ -226,29 +242,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="js/scripts.js"></script>
         <script>
-            const ani1 = gsap.timeline({
-              defaults:{
-              autoAlpha:0,
-            },
-              ease: "none",
-              duration: 0.3
-           });
-            
-            const ani2 = gsap.timeline({
-              defaults:{
-              autoAlpha:0,
-            },
-              ease: "none",
-              duration: 0.4,
-            });
-
-            ani1.from("#scroll1",{
-                y: -100,
-            })
-            
-            ani2.from("#scroll2",{
-                y: -100,
-            })
+    
         </script>
     </body>
 </html>

@@ -1959,6 +1959,10 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .about{
+    justify-content: center;
+  }
 }
 .form-label {
   margin-bottom: 0.5rem;
@@ -3753,6 +3757,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -8182,21 +8187,6 @@ textarea.form-control-lg {
   word-break: break-word !important;
 }
 
-/* rtl:end:remove */
-.text-primary {
-  --bs-text-opacity: 1;
-  background: -webkit-linear-gradient(315deg, red 0%, yellow 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-secondary {
-  --bs-text-opacity: 1;
-  background: -webkit-linear-gradient(315deg, green 0%, purple 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .text-success {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
@@ -11515,7 +11505,7 @@ textarea.form-control-lg {
     font-size: 2rem !important;
   }
   .fs-3 {
-    font-size: 1.75rem !important;
+    font-size: 1.75rem;
   }
   .fs-4 {
     font-size: 1.5rem !important;
@@ -11592,13 +11582,15 @@ html {
   max-width: 40rem;
 }
 .profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
+  height: 75vw;
+  max-height: 40rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 30px;
 }
+
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
@@ -11746,6 +11738,7 @@ html {
 
 .class_text{
   font-family: nanumson;
+  font-size: 40px !important;
   font-weight: 700;
 }
 
@@ -11901,8 +11894,8 @@ html {
 }
 
 .class4:hover{
-  color: #e21e80;
-  border: 3px solid #e21e80;
+  color: red;
+  border: 3px solid red;
   font-weight: 700;
   z-index: 1;
 }
@@ -11912,8 +11905,15 @@ html {
 }
 
 .about .about_main > p{
-  color: plum;
+  --bs-text-opacity: 1;
+  background: -webkit-linear-gradient(315deg, blue 0%, purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.about .about_main2 > p{
+  font-weight: 700;
 }
 
 .btn1, .btn2 {
@@ -11941,7 +11941,6 @@ html {
   justify-content: space-between;
   font-size: 25px;
   font-weight: 700;
-  font-family: nanumson2;
 }
 
 .project_explain .project_explain1 p span{
@@ -11951,6 +11950,35 @@ html {
 
 .project_explain .project_explain1 p:last-child span{
   color: blue;
+}
+
+/* rtl:end:remove */
+.text-primary {
+  --bs-text-opacity: 1;
+  background: -webkit-linear-gradient(315deg, yellow 0%, green 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.text-primary2 {
+  --bs-text-opacity: 1;
+  background: -webkit-linear-gradient(315deg, red 0%, yellow 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.text-secondary {
+  --bs-text-opacity: 1;
+  background: -webkit-linear-gradient(315deg, green 0%, purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
 }
 
 @media screen and (max-width: 992px) {
@@ -11973,8 +12001,4 @@ html {
 @font-face {
   font-family: nanumson2;
   src: url(../fonts/nanumson2.ttf);
-}
-
-body{
-  
 }

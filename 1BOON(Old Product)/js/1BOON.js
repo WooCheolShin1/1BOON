@@ -135,11 +135,11 @@
     }
   }
 
-  window.addEventListener('resize', function() {
-    ww = window.innerWidth;
-    swiper.destroy();
-    responsiveSwiper();
-  });
+  // window.addEventListener('resize', function() {
+  //   ww = window.innerWidth;
+  //   swiper.destroy();
+  //   responsiveSwiper();
+  // });
 
     var swiper = new Swiper(".mySwiper2", {
       spaceBetween: 30,
