@@ -11914,6 +11914,7 @@ html {
 
 .about .about_main2 > p{
   font-weight: 700;
+  transition: 0.4s;
 }
 
 .btn1, .btn2 {
@@ -12001,4 +12002,13 @@ footer{
 @font-face {
   font-family: nanumson2;
   src: url(../fonts/nanumson2.ttf);
+}
+
+.special{
+  margin-top: 20px;
+}
+
+.special > p{
+  color: red;
+  font-weight: bold;
 }
