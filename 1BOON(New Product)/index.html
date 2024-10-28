@@ -518,6 +518,49 @@
       </div>
     </div>
   </div>
+  <div class="visual8">
+    <p>오시는 길</p>
+    <div class="visual8_main">
+      <div class="visual_8_main_button">
+        <ul>
+          <li><a href="">본사</a></li>
+          <li><a href="">연구소</a></li>
+        </ul>
+      </div>
+      <div class="visual_8_main_content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1883.4817035973897!2d126.89394622552047!3d37.445938467808965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61a391875bbb%3A0xdad0ba96ed342b64!2z6rK96riw64-EIOq0keuqheyLnCDshoztlZjrj5kgMTM0NA!5e0!3m2!1sko!2skr!4v1730108829915!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="visual_8_main_content_text">
+          <div class="maintext">
+            <div class="infobox">
+              <div class="box">
+
+              </div>
+              <div class="textbox">
+                경기도 광명시 소하로 190 B-1013
+              </div>
+            </div>
+            <div class="infobox">
+              <div class="box">
+
+              </div>
+              <div class="textbox">
+                02-899-1054
+              </div>
+            </div>
+            <div class="infobox">
+              <div class="box">
+
+              </div>
+              <div class="textbox">
+                02-899-1053
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer id="footer">
     <div id="foot" class="fixed">
       <div class="inner">
@@ -572,6 +615,22 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script type="text/javascript" src="js/NEW1BOON.js"></script>
 <script>
+  let btn = document.querySelectorAll(".visual_8_main_button ul")
+  btn[0].querySelector("li").classList.add("on");
+
+  btn.forEach(function(v,k){
+    v.onclick = function(e){
+      e.preventDefault();
+      buttondelete();
+      btn[k].querySelector("li").classList.add("on");
+    }
+  })
+
+  function buttondelete(){
+    btn.forEach(function(v,k){
+      v.querySelector("li").classList.remove("on");
+    })
+  }
 
 </script>
 </html>
