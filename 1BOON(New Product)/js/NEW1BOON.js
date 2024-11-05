@@ -1,8 +1,8 @@
-window.onload = function(){
-  setTimeout(function() {
-    scrollTo(0,0);
-  }, 100);
-}
+// window.onload = function(){
+//   setTimeout(function() {
+//     scrollTo(0,0);
+//   }, 100);
+// }
 
   let wheellist = document.getElementById("scrollList");
   let wheellist2 = document.getElementById("scrollList2");
@@ -273,3 +273,24 @@ window.onload = function(){
   $('.swiper-slide').on('mouseout', function(){
     swiper.autoplay.start();
   });
+
+  let btn = document.querySelectorAll(".visual_8_main_button ul li");
+  let text = document.querySelectorAll(".textbox_change div");
+  btn[0].querySelector("a").classList.add("on");
+  text[0].classList.add("on");
+
+  btn.forEach(function(v,k){
+    v.onclick = function(e){
+      e.preventDefault();
+      buttondelete();
+      btn[k].querySelector("a").classList.add("on");
+      text[k].classList.add("on");
+    }
+  })
+
+  function buttondelete(){
+    btn.forEach(function(v,k){
+      v.querySelector("a").classList.remove("on");
+      text[k].classList.remove("on");
+    })
+  };
